@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6e6;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #d9534f;
+        }
+        .container {
+            /* padding: 50px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* min-height: 100vh; */
+        }
+        .message {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+            text-align: center;
+            width: 50%;
+        }
+        .heart {
+            font-size: 50px;
+            color: #d9534f;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .slideshow-container {
+            position: relative;
+            width: 80%;
+            max-width: 400px;
+
+        }
+        .slide {
+            display: none;
+        }
+        .slide img {
+            width: 100%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+
+
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+    <div class="main-container">
+
+
+
+
+
+
+        <div class="container">
+            <h1>Para Judith</h1>
+            <p class="message">También si dos durmieren juntos, se calentarán mutuamente; mas ¿cómo se calentará uno solo? Y si alguno prevaleciere contra uno, dos le resistirán; y cordón de tres dobleces no se rompe pronto. <b>Eclesiastés 4:11-12</b></p>
+            <div class="heart" id="heart">❤️</div>
+        </div>
+    
+    
+    
+    
+    
+        <!-- FRAME -->
+    
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="./JUDITH/1.jpg" alt="Foto 1">
+            </div>
+            <div class="slide fade">
+                <img src="./JUDITH/2.jpg" alt="Foto 2">
+            </div>
+            <div class="slide fade">
+                <img src="./JUDITH/3.jpg" alt="Foto 3">
+            </div>
+
+            <div class="slide fade">
+                <img src="./JUDITH/4.jpg" alt="Foto 4">
+            </div>
+
+            <div class="slide fade">
+                <img src="./JUDITH/5.jpg" alt="Foto 5">
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 1500); // Cambia de imagen cada 3 segundos
+        }
+    </script>
+
+
+</body>
+</html>
